@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Álcool ou Gasolina?</h3>
+    <script>
+
+        var pulaLinha = function(){
+            document.write("<hr>");
+        };
+
+
+        tanque = 40;
+        precoGasolina = 2.90;
+        precoAlcool = 2.40;
+        caminhoComGasolina = 480;
+        caminhoComAlcool = 300;
+        consumoDeAlcool = caminhoComAlcool / tanque;
+        consumoDeGasolina = caminhoComGasolina/tanque;
+        precoPorKilometroAlcool = precoAlcool/consumoDeAlcool;
+        precoPorKilometroGasolina = precoGasolina/consumoDeGasolina;
+        document.write("O consumo de gasolina = "+ consumoDeGasolina + " litros");
+        pulaLinha();
+        document.write("O consumo de álcool = " + consumoDeAlcool + " litros");
+        pulaLinha();
+        document.write("O preço do Km/l de Alcool = "+ precoPorKilometroAlcool.toFixed(2));
+        pulaLinha();
+        document.write("O preço do Km/l de Gasolina = "+ precoPorKilometroGasolina.toFixed(2));
+        pulaLinha();
+        variavelNumeros = 0.314178473;
+        document.write("Numero arredondado: " + variavelNumeros.toFixed(2));
+        pulaLinha();
+    </script>
+</body>
+</html>
