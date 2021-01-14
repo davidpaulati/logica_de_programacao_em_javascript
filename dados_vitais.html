@@ -12,12 +12,8 @@
             document.write("<br>");
         };
 
-        var mensagem = function() {
-            document.write("Voce ja viveu " + calculaDiasDeVida(idade) + " dias de vida");
-        }
-
-        var mensagem2 = function() {
-            document.write("Seu coração ja bateu " + calculaBatimentos(dias) + " Haja coração");
+        var mensagem = function(frase) {
+            document.write(frase);
         }
         
         var calculaDiasDeVida = function(idade) {
@@ -26,16 +22,17 @@
         };
 
         var calculaBatimentos = function() {
-            calculaDiasDeVida(dias);
             batimentos = dias * 24 * 60 * 80;
             return batimentos;
         }
 
 
     var idade = prompt("Quantos anos você tem? ");
-    mensagem(calculaDiasDeVida(idade));
+    var dias = calculaDiasDeVida(idade);
+    mensagem("Voce tem " +calculaDiasDeVida(idade) + " dias de vida");
     pulaLinha();
-    mensagem2(calculaBatimentos());
+    mensagem("Seu coração ja bateu " +calculaBatimentos(dias)+ "x Haja Coração")
+    
     
     </script>
     
