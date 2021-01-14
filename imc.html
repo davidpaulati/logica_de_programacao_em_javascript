@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+    var calculaImc = function(peso,altura) {
+        var imc = peso/(altura * altura);
+        return imc;
+
+    };
+
+    var pulaLinha = function() {
+        document.write("<br>");
+
+    };
+
+    var mostra = function (frase) {
+        document.write(frase);
+        pulaLinha();
+    };
+
+    var peso = 67;
+    altura = 1.73;
+    var imc =Math.round(calculaImc(peso,altura));
+    mostra("o Imc é : "+ imc);
+    mostra("Ele ainda está " +(imc - 18.5)
+    + " pontos acima do limite da magreza");
+    
+    
+</script>
+</body>
+</html>
