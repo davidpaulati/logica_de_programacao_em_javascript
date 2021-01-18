@@ -12,8 +12,14 @@
         return numeroPensado;
     }
 
+   
+
     var numeroPensado = sorteia(100);
     var chute = prompt("Já pensei. Qual você acha que é?");
+    if(isNaN(chute)){
+        document.write("Apenas numeros são válidos! ");
+    }
+
     if(chute == numeroPensado) {
         mostra("Ual! Você acertou, pois eu pensei no  "+ numeroPensado);
     } else {
