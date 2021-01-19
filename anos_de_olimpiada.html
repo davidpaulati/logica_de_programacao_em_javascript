@@ -1,0 +1,15 @@
+<script>
+
+    function mostra(frase) {
+        document.write(frase + "<br>");
+    }
+    
+    var anoDeOlimpiada = 1896;
+    var anoLimite = prompt("Digite o ano limite: ");
+    while(anoDeOlimpiada <= anoLimite){
+        mostra(anoDeOlimpiada + "  tem olimpiada!");
+        anoDeOlimpiada = parseInt(anoDeOlimpiada) + 4;
+        //mostra(anoDeCopa + " esse valor é o valor após a soma");
+    }
+    mostra("Ufa! Esses foram os anos de copa ate " + anoLimite);
+</script>

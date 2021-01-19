@@ -1,0 +1,15 @@
+<script>
+
+    function mostra(frase) {
+        document.write(frase + "<br>");
+    };
+
+
+    var multiplicador = 1;
+    tabuada = prompt("Digite um numero para saber sua tabuada: ");
+    while(multiplicador <= 10) {
+        mostra( tabuada +" x " + multiplicador +" = "+ parseInt(tabuada) * multiplicador);
+        multiplicador = multiplicador + 1;
+    }
+    
+</script>
