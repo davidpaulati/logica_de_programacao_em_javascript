@@ -1,0 +1,17 @@
+<script>
+
+function mostra(frase) {
+        document.write(frase);
+    };
+
+    function pulaLinha() {
+        document.write("<br>");
+    };
+
+for(var coluna = 10; coluna >= 1; coluna--){
+    for(var linha = 1; linha <= coluna; linha++){
+        mostra("*");
+    }
+    pulaLinha();
+}
+</script>
